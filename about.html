@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Katha | Motion Designer &amp; Ilustrator</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-navigation is--mobile">
+            <div class="header-section">
+                <a class="logo-anchor line-object--top" href="index.html">
+                    <span class="logo logo-md logo-deer"></span>
+                </a>
+            </div>
+            <div class="header-section">
+                <button class="button button--icon" id="open-menu">
+                    <span class="icon-ui icon-menu"></span>
+                </button>
+            </div>
+        </div>
+        <div class="header-navigation is--desktop">
+            <div class="header-section">
+                <div class="back-heading" id="close-menu">
+                    <button class="button button--icon">
+                        <span class="icon-ui icon-arrow_back"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="header-section">
+                <div class="logo-block logo-block--center line-object--top">
+                    <a class="logo-anchor" href="index.html">
+                        <span class="logo logo-lg logo-deer"></span>
+                        <span class="logo logo-description">Motion Designer &amp; Illustrator</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-section">
+                <ul class="nav-inline nav--global">
+                    <li>
+                        <a class="nav-inline__item" href="index.html">Work</a>
+                    </li>
+                    <li>
+                        <a class="nav-inline__item is--active" href="">Info &amp; contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-section">
+                <ul class="nav-inline nav--social">
+                    <li>
+                        <a class="nav-inline__item" href="">
+                            <span class="icon-ui icon-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-inline__item" href="">
+                            <span class="icon-ui icon-behance"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-inline__item" href="">
+                            <span class="icon-ui icon-vimeo"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-inline__item" href="">
+                            <span class="icon-ui icon-youtube"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="about">
+            <div class="separator"></div>
+            <div class="media">
+                <div class="media__img">
+                    <span class="logo logo-lg logo-deer"></span>
+                </div>
+                <div class="media__content">
+                    <div class="gradient-solid">
+                        <div class="gradient-solid-1"></div>
+                        <div class="gradient-solid-2"></div>
+                        <div class="gradient-solid-3"></div>
+                    </div>
+                    <h1>Hey! I'm Katha</h1>
+                    <p>I am an animator and illustrator, I studied graphic design in Cancun, Mexico where I was born and raised. Audiovisual language always caught my attention but until a few years ago I decided to dedicate my self 100% to it. I love collaborating with brands and people, being able to explore other worlds and combining out creative vision to create audiovisual expressions that touch people.</p>
+                    <p>Feel free to send an email if you haver a project where you think we can work, collaborate or just chat.</p>
+                    <p>With internet only lag is the limit</p>
+                    <a class="display-3" href="mailto:hola@katha.com">hola@katha.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-legals">Katha - Motion Designer &amp; Ilustrator</p>
+        <div class="footer-symbol line-object--bottom">
+            <span class="icon-ui icon-star"></span>
+        </div>
+    </footer>
+
+    <!--INTERACCIONES-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //HEADER NAVIGATION
+            $("#open-menu").on("click", function (e) {
+                e.preventDefault();
+                $('.header-navigation.is--desktop').addClass("is--slideIn")
+            });
+            //HEADING BACK
+            $("#close-menu").on("click", function (e) {
+                e.preventDefault();
+                $(".header-navigation.is--desktop").removeClass("is--slideIn")
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
